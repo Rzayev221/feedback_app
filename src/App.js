@@ -11,6 +11,7 @@ import FeedbackStats from "./components/FeedbackStats";
 import FeedbackForm from "./components/FeedbackForm";
 import AboutPage from "./pages/AboutPage";
 import AboutIconLink from "./components/AboutIconLink";
+import NotFoundPage from "./pages/NotFoundPage";
 
 function App() {
   const [feedback, setFeedback] = useState(FeedbackData);
@@ -47,6 +48,7 @@ function App() {
           />
 
           <Route path="/about" element={<AboutPage />} />
+          <Route path="notfound" element={<NotFoundPage />} />
         </Routes>
         <AboutIconLink></AboutIconLink>
       </div>
