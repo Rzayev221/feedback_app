@@ -17,11 +17,6 @@ import { FeedbackProvider } from "./context/FeedbackContext";
 function App() {
   const [feedback, setFeedback] = useState(FeedbackData);
 
-  const deleteFeedback = (id) => {
-    if (window.confirm("are you sure you want to delete?"))
-      setFeedback(feedback.filter((item) => item.id !== id));
-  };
-
   const addFeedback = (newFeedback) => {
     newFeedback.id = uuidv4();
     setFeedback([newFeedback, ...feedback]);
@@ -41,7 +36,7 @@ function App() {
                 <>
                   <FeedbackForm handleAdd={addFeedback} />
                   <FeedbackStats />
-                  <FeedbackList handleDelete={deleteFeedback} />
+                  <FeedbackList />
                 </>
               }
             />
