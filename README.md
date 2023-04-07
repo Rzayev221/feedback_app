@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-Project was deployed to mock website : https://celebrated-wisp-82dc73.netlify.app/ 
+Project was deployed to mock Netify server on the website : https://celebrated-wisp-82dc73.netlify.app/ 
 Feel free to test it out and give feedback. 
 
 Developer
